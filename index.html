@@ -3,10 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Website Latihan</title>
+    <link rel="stylesheet" href="assets\style.css">
 </head>
 <body>
-    <h1>Welcome to the Home Page</h1>
-    <p>Age: [age]</p>
+
+<header>
+    <div class="logo">
+        <img src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo-RevoU-5.png" alt="Logo Website">
+    </div>
+    <nav>
+        <button>Home</button>
+        <button>Our Profile</button>
+        <button>Achievement</button>
+        <button>Message Us</button>
+    </nav>
+</header>
+
+<section class="welcome">
+    <h1>Hi Firman, Welcome To Website</h1>
+    <p>Ini adalah website latihan pertama</p>
+    <div class="banner">
+        <img src="https://th.bing.com/th/id/OIP.KDaNo3vPbY2LAJzEa2zhlAHaCU?rs=1&pid=ImgDetMain" alt="Banner Image">
+    </div>
+</section>
+
+<section class="facilities">
+    <h2>Our Facilitation</h2>
+    <div class="facility-list">
+        <div class="facility">
+            <div class="circle">
+                <img src="https://img.freepik.com/free-vector/indonesian-female-civil-servant-holding-pen-book_10045-780.jpg?uid=R158472793&ga=GA1.1.7791761.1741368439&semt=ais_hybrid" alt="Professional Teacher">
+            </div>
+            <p>Professional Teacher</p>
+        </div>
+        <div class="facility">
+            <div class="circle">
+                <img src="https://img.freepik.com/free-vector/isometric-football-field-with-workout-area_88138-157.jpg?uid=R158472793&ga=GA1.1.7791761.1741368439&semt=ais_hybrid" alt="Sport Field">
+            </div>
+            <p>Sport Field</p>
+        </div>
+        <div class="facility">
+            <div class="circle">
+                <img src="https://img.freepik.com/free-vector/empty-classroom-interior-with-chalkboard_1308-65378.jpg?uid=R158472793&ga=GA1.1.7791761.1741368439&semt=ais_hybrid" alt="Classroom">
+            </div>
+            <p>Classroom</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="message-us">
+    <h2>Message Us</h2>
+    <div class="form-container">
+        <form id="messageForm">
+            <div class="form-group">
+                <label>Nama :</label>
+                <input type="text" id="nama" required>
+            </div>
+            <div class="form-group">
+                <label>Tanggal Lahir :</label>
+                <input type="date" id="tanggalLahir" required>
+            </div>
+            <div class="form-group">
+                <label>Jenis Kelamin :</label>
+                <input type="radio" name="gender" value="Laki-Laki" checked> Laki-Laki
+                <input type="radio" name="gender" value="Perempuan"> Perempuan
+            </div>
+            <div class="form-group">
+                <label>Pesan :</label>
+                <textarea id="pesan" required></textarea>
+            </div>
+            <div class="form-group button-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <div class="message-result">
+            <p id="current-time"><strong>Current time :</strong> -</p>
+            <p><strong>Nama :</strong> <span id="result-nama">-</span></p>
+            <p><strong>Tanggal Lahir :</strong> <span id="result-tanggalLahir">-</span></p>
+            <p><strong>Jenis Kelamin :</strong> <span id="result-gender">-</span></p>
+            <p><strong>Pesan :</strong> <span id="result-pesan">-</span></p>
+        </div>
+    </div>
+</section>
+<footer>
+    Created By RevoU
+</footer>
+
+<script src="assets\script.js"></script>
 </body>
 </html>

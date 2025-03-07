@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Website Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo"><img src="images/logo.png" alt="Logo Sekolah"></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profil Kami</a>
+        <a href="#">Achievement</a>
+        <a href="#message-us">Kirim Pesan kepada Kami</a>
+    </nav>
+</header>
+
+<section class="welcome">
+    <h1 id="welcome-message"></h1>
+    <p>Ini adalah website latihan pertama</p>
+    <div class="banner">
+        <img src="images/banner.jpg" alt="Banner Sekolah">
+    </div>
+</section>
+
+<section class="facilities">
+    <h2>Our Facilitation</h2>
+    <div class="facility-list">
+        <div class="facility">
+            <div class="circle"><img src="images/teacher.png" alt="Professional Teacher"></div>
+            <p>Professional Teacher</p>
+        </div>
+        <div class="facility">
+            <div class="circle"><img src="images/sport.png" alt="Sport Field"></div>
+            <p>Sport Field</p>
+        </div>
+        <div class="facility">
+            <div class="circle"><img src="images/classroom.png" alt="Classroom"></div>
+            <p>Classroom</p>
+        </div>
+    </div>
+</section>
+
+<section class="message-us" id="message-us">
+    <h2>Kirim Pesan kepada Kami</h2>
+    <form id="messageForm">
+        <label>Nama:</label><input type="text" id="nama" required>
+        <label>Tanggal Lahir:</label><input type="date" id="tanggalLahir" required>
+        <label>Jenis Kelamin:</label>
+        <input type="radio" name="gender" value="Laki-Laki"> Laki-Laki
+        <input type="radio" name="gender" value="Perempuan"> Perempuan
+        <label>Pesan:</label><textarea id="pesan" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="messageResult"></div>
+</section>
+
+<footer>Created By RevoU</footer>
+</body>
+</html>
