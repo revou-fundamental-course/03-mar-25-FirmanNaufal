@@ -1,97 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Latihan</title>
-    <link rel="stylesheet" href="assets\style.css">
+    <title>Brilliant Horizon Academy - Memberdayakan Pemimpin Masa Depan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header>
-    <div class="logo">
-        <img src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo-RevoU-5.png" alt="Logo Website">
-    </div>
-    <nav>
-        <button>Home</button>
-        <button>Our Profile</button>
-        <button>Achievement</button>
-        <button>Message Us</button>
-    </nav>
-</header>
-
-<section class="welcome">
-    <h1>Hi Firman, Welcome To Website</h1>
-    <p>Ini adalah website latihan pertama</p>
-    <div class="banner">
-        <img src="https://th.bing.com/th/id/OIP.KDaNo3vPbY2LAJzEa2zhlAHaCU?rs=1&pid=ImgDetMain" alt="Banner Image">
-    </div>
-</section>
-
-<section class="facilities">
-    <h2>Our Facilitation</h2>
-    <div class="facility-list">
-        <div class="facility">
-            <div class="circle">
-                <img src="https://img.freepik.com/free-vector/indonesian-female-civil-servant-holding-pen-book_10045-780.jpg?uid=R158472793&ga=GA1.1.7791761.1741368439&semt=ais_hybrid" alt="Professional Teacher">
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://img.favpng.com/18/20/5/logo-university-campus-png-favpng-p3z7fmb6UjgzmQybAdrpuT0cD.jpg" alt="Logo Brilliant Horizon Academy">
             </div>
-            <p>Professional Teacher</p>
+            <nav class="nav">
+                <a href="#welcome">Beranda</a>
+                <a href="#contact-us">Kontak Kami</a>
+                <a href="profile.html">Tentang Kami</a> 
+                <a href="profile.html#achievements">Kisah Sukses</a> 
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <div class="facility">
-            <div class="circle">
-                <img src="https://img.freepik.com/free-vector/isometric-football-field-with-workout-area_88138-157.jpg?uid=R158472793&ga=GA1.1.7791761.1741368439&semt=ais_hybrid" alt="Sport Field">
+    </header>
+    
+    <div class="container">
+        <section class="welcome" id="welcome">
+            <div class="inner-container">
+                <h1>Halo <span id="username">(Nama Anda)</span>, Selamat Datang di Brilliant Horizon Academy</h1>
+                <p>Menginspirasi keunggulan dan membina potensi melalui pendidikan inovatif sejak 2010.</p>
+                <div class="slider-container">
+                    <div class="slider" id="slider">
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1536982679170-1b2277759c92?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZXJuJTIwY2FtcHVzfGVufDB8fDB8fHww" alt="Kampus Modern">
+                            <div class="slide-caption">Kampus Modern Kami</div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1569830904560-2afd7062213c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGlubm92YXRpb24lMjBsYWJ8ZW58MHx8MHx8fDA%3D" alt="Laboratorium Inovasi">
+                            <div class="slide-caption">Laboratorium Inovasi</div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://plus.unsplash.com/premium_photo-1664476285341-84be04ff268b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3R1ZGVudCUyMGFjdGl2aXR5fGVufDB8fDB8fHww" alt="Kehidupan Siswa">
+                            <div class="slide-caption">Kehidupan Siswa yang Dinamis</div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhZHVhdGlvbnxlbnwwfHwwfHx8MA%3D%3D" alt="Hari Wisuda">
+                            <div class="slide-caption">Merayakan Kesuksesan</div>
+                        </div>
+                    </div>
+                    <button class="prev-btn">❮</button>
+                    <button class="next-btn">❯</button>
+                    <div class="slider-dots"></div>
+                </div>
+                <div class="counter">Temukan Komunitas Pembelajaran Kami</div>
+                <div class="quick-links">
+                    <a href="#why-choose-us" class="quick-link-btn">Pendekatan Kami</a>
+                    <a href="#upcoming-events" class="quick-link-btn">Acara</a>
+                    <a href="#learning-resources" class="quick-link-btn">Sumber Daya</a>
+                </div>
             </div>
-            <p>Sport Field</p>
-        </div>
-        <div class="facility">
-            <div class="circle">
-                <img src="https://img.freepik.com/free-vector/empty-classroom-interior-with-chalkboard_1308-65378.jpg?uid=R158472793&ga=GA1.1.7791761.1741368439&semt=ais_hybrid" alt="Classroom">
+        </section>
+
+        <section class="why-choose-us" id="why-choose-us">
+            <div class="inner-container">
+                <h2>Kenapa Memilih Brilliant Horizon Academy?</h2>
+                <div class="why-container">
+                    <div class="why-item">
+                        <div class="icon">
+                            <img src="https://plus.unsplash.com/premium_photo-1683141205655-0c59b73aea47?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZ3Jlc2l2ZSUyMGxlYXJuaW5nfGVufDB8fDB8fHww" alt="Pembelajaran Progresif">
+                        </div>
+                        <h3>Pembelajaran Progresif</h3>
+                        <p>Kurikulum berbasis proyek kami memberdayakan siswa untuk belajar melalui eksplorasi, berpikir kritis, dan pemecahan masalah dunia nyata.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="icon">
+                            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2xhc3N8ZW58MHx8MHx8fDA%3D" alt="Perhatian Personal">
+                        </div>
+                        <h3>Perhatian Personal</h3>
+                        <p>Dengan ukuran kelas yang kecil dan mentor yang berdedikasi, kami memastikan setiap siswa menerima dukungan yang mereka butuhkan untuk unggul secara akademis dan pribadi.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="icon">
+                            <img src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2xhc3N8ZW58MHx8MHx8fDA%3D" alt="Siap Menghadapi Masa Depan">
+                        </div>
+                        <h3>Siap Menghadapi Masa Depan</h3>
+                        <p>Kami mengintegrasikan teknologi, keberlanjutan, dan kewarganegaraan global ke dalam semua aspek pembelajaran untuk mempersiapkan siswa menghadapi tantangan masa depan.</p>
+                    </div>
+                </div>
             </div>
-            <p>Classroom</p>
-        </div>
+        </section>
+
+        <section class="upcoming-events" id="upcoming-events">
+            <div class="inner-container">
+                <h2>Acara Mendatang</h2>
+                <div class="event-container">
+                    <div class="event-item">
+                        <h3>Expo Inovasi 2025</h3>
+                        <p><strong>Tanggal:</strong> 25 April 2025</p>
+                        <p><strong>Detail:</strong> Proyek inovasi dan teknologi siswa yang dipamerkan. Terbuka untuk komunitas!</p>
+                        <a href="#" class="event-link">Daftar Sekarang</a>
+                    </div>
+                    <div class="event-item">
+                        <h3>Festival Seni</h3>
+                        <p><strong>Tanggal:</strong> 15 Mei 2025</p>
+                        <p><strong>Detail:</strong> Pertunjukan musik, pameran seni, dan produksi teater.</p>
+                        <a href="#" class="event-link">Lihat Program</a>
+                    </div>
+                    <div class="event-item">
+                        <h3>Hari Budaya Internasional</h3>
+                        <p><strong>Tanggal:</strong> 10 Juni 2025</p>
+                        <p><strong>Detail:</strong> Merayakan komunitas kami yang beragam dengan makanan, pertunjukan, dan pameran.</p>
+                        <a href="#" class="event-link">Pelajari Lebih Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="student-experience">
+            <div class="inner-container">
+                <h2>Kehidupan di Brilliant Horizon</h2>
+                <p>Siswa kami berkembang dalam komunitas yang hidup yang mendorong eksplorasi, kolaborasi, dan pertumbuhan pribadi.</p>
+                <div class="experience-container">
+                    <div class="experience-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1706061120035-ebd3ce35e4e0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3R1ZGVudCUyMGNsdWJ8ZW58MHx8MHx8fDA%3D" alt="Klub Siswa">
+                        <h3>Program Pengayaan</h3>
+                        <p>Lebih dari 25 klub mulai dari robotika hingga debat, drama, dan aktivisme lingkungan.</p>
+                        <a href="#" class="experience-link">Jelajahi Program</a>
+                    </div>
+                    <div class="experience-item">
+                        <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RXhjaGFuZ2UlMjBwcm9ncmFtcyUyMGFuZCUyMHZpcnR1YWwlMjBjb2xsYWJvcmF0aW9ucyUyMHdpdGglMjBzY2hvb2xzJTIwd29ybGR3aWRlLnxlbnwwfHwwfHx8MA%3D%3D" alt="Koneksi Global">
+                        <h3>Koneksi Global</h3>
+                        <p>Program pertukaran dan kolaborasi virtual dengan sekolah-sekolah di seluruh dunia.</p>
+                        <a href="#" class="experience-link">Jaringan Kami</a>
+                    </div>
+                    <div class="experience-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1683120926357-a7ff70a957a7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TGVhZGVyc2hpcCUyMERldmVsb3BtZW50fGVufDB8fDB8fHww" alt="Pengembangan Kepemimpinan">
+                        <h3>Pengembangan Kepemimpinan</h3>
+                        <p>Program pembimbingan dan peluang kepemimpinan langsung.</p>
+                        <a href="#" class="experience-link">Pelajari Lebih Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inspiration">
+            <div class="inner-container">
+                <h2>Prinsip-prinsip Panduan</h2>
+                <div class="quote-container">
+                    <div class="quote-item">
+                        <p>"Pendidikan bukanlah pengisian ember, tetapi penerangan api."</p>
+                        <span>- William Butler Yeats</span>
+                    </div>
+                    <div class="quote-item">
+                        <p>"Pikiran bukanlah wadah untuk diisi, tetapi api untuk dinyalakan."</p>
+                        <span>- Plutarch</span>
+                    </div>
+                    <div class="quote-item">
+                        <p>"Kecerdasan ditambah karakter—itulah tujuan pendidikan sejati."</p>
+                        <span>- Martin Luther King Jr.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="learning-resources" id="learning-resources">
+            <div class="inner-container">
+                <h2>Sumber Daya Siswa</h2>
+                <p>Alat dan platform untuk mendukung komunitas pembelajaran kami.</p>
+                <div class="resource-container">
+                    <div class="resource-item">
+                        <h3>Portal Pembelajaran</h3>
+                        <p>Akses tugas, sumber daya, dan umpan balik.</p>
+                        <a href="#" class="resource-link">Masuk</a>
+                    </div>
+                    <div class="resource-item">
+                        <h3>Perpustakaan Digital</h3>
+                        <p>Buku elektronik, basis data riset, dan sumber daya multimedia.</p>
+                        <a href="#" class="resource-link">Jelajahi Koleksi</a>
+                    </div>
+                    <div class="resource-item">
+                        <h3>Sumber Daya Keluarga</h3>
+                        <p>Panduan, buletin, dan materi dukungan untuk keluarga.</p>
+                        <a href="#" class="resource-link">Akses Sumber Daya</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact-us">
+            <div class="inner-container">
+                <h2>Kontak Kami</h2>
+                <div class="form-container">
+                    <div class="form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap:</label>
+                                <input type="text" id="name" name="name">
+                                <div id="nameError" class="error">Nama diperlukan</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Alamat Email:</label>
+                                <input type="email" id="email" name="email">
+                                <div id="emailError" class="error">Email yang valid diperlukan</div>
+                            </div>
+                            <div class="form-group">
+                                <label>Saya adalah:</label>
+                                <div class="radio-group">
+                                    <div>
+                                        <input type="radio" id="prospective" name="status" value="Orang Tua Calon Siswa">
+                                        <label for="prospective" class="radio-label">Laki-laki</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="current" name="status" value="Orang Tua Siswa Saat Ini">
+                                        <label for="current" class="radio-label">Perempuan</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="other" name="status" value="Lainnya">
+                                        <label for="other" class="radio-label">Lainnya</label>
+                                    </div>
+                                </div>
+                                <div id="statusError" class="error">Silakan pilih opsi</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan Anda:</label>
+                                <textarea id="message" name="message"></textarea>
+                                <div id="messageError" class="error">Pesan diperlukan</div>
+                            </div>
+                            <button type="submit">Kirim</button>
+                        </form>
+                    </div>
+                    <div class="info" id="submitted-info">
+                        <div class="current-info">
+                            <p><strong>Waktu Pengiriman: </strong><span id="current-time">-</span></p>
+                            <p><strong>Nama: </strong><span id="info-name">-</span></p>
+                            <p><strong>Email: </strong><span id="info-email">-</span></p>
+                            <p><strong>Status: </strong><span id="info-status">-</span></p>
+                            <p><strong>Pesan: </strong><span id="info-message">-</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-</section>
-
-
-<section class="message-us">
-    <h2>Message Us</h2>
-    <div class="form-container">
-        <form id="messageForm">
-            <div class="form-group">
-                <label>Nama :</label>
-                <input type="text" id="nama" required>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Brilliant Horizon Academy</h3>
+                    <p>123 Learning Way, Innovation City</p>
+                    <p>Telepon: (555) 123-4567</p>
+                    <p>Email: info@brillianthorizon.edu</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Tautan Cepat</h3>
+                    <a href="#welcome">Beranda</a>
+                    <a href="profile.html">Tentang Kami</a>
+                    <a href="#upcoming-events">Acara</a>
+                    <a href="#contact-us">Kontak</a>
+                </div>
+                <div class="footer-social">
+                    <h3>Hubungi Kami</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">TW</a>
+                        <a href="#" class="social-icon">YT</a>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label>Tanggal Lahir :</label>
-                <input type="date" id="tanggalLahir" required>
+            <div class="copyright">
+                Dibuat Oleh Firman Naufal Aryaputra | © 2025 Brilliant Horizon Academy | Semua Hak Dilindungi
             </div>
-            <div class="form-group">
-                <label>Jenis Kelamin :</label>
-                <input type="radio" name="gender" value="Laki-Laki" checked> Laki-Laki
-                <input type="radio" name="gender" value="Perempuan"> Perempuan
-            </div>
-            <div class="form-group">
-                <label>Pesan :</label>
-                <textarea id="pesan" required></textarea>
-            </div>
-            <div class="form-group button-group">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-
-        <div class="message-result">
-            <p id="current-time"><strong>Current time :</strong> -</p>
-            <p><strong>Nama :</strong> <span id="result-nama">-</span></p>
-            <p><strong>Tanggal Lahir :</strong> <span id="result-tanggalLahir">-</span></p>
-            <p><strong>Jenis Kelamin :</strong> <span id="result-gender">-</span></p>
-            <p><strong>Pesan :</strong> <span id="result-pesan">-</span></p>
         </div>
-    </div>
-</section>
-<footer>
-    Created By RevoU
-</footer>
+    </footer>
 
-<script src="assets\script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
